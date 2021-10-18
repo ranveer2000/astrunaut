@@ -1,6 +1,6 @@
 var bg,sleep, brush, gym, eat, bath, move;
 var astronaut;
-var myfont,font;
+var myfont;
 var go = 0;
 function preload(){
   bg= loadImage("images/iss.png");
@@ -11,7 +11,6 @@ function preload(){
   bath = loadAnimation("images/bath1.png","images/bath1.png","images/bath1.png","images/bath2.png","images/bath2.png","images/bath2.png");
  move = loadAnimation("images/move1.png","images/move1.png","images/move2.png","images/move2.png");
  myfont = loadFont("font.ttf");
- font = loadFont("text.ttf");
 }
 
 function setup() {
@@ -27,7 +26,6 @@ function draw() {
   background(bg);
   drawSprites();
 
-  textFont(font);
   textSize(20);
   fill("white")
   text("Instructions:",20, 35);
